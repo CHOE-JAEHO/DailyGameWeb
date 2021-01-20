@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="daily.game.dao.MemberDAO">
+  	<insert id="Join">
+  	insert into DGWmember values(#{id},#{pw},#{name},#{gen},#{birth},#{email},#{phone})
+  	</insert>
+  	
+  	<select id="List" resultType="daily.game.dto.MemberDTO">
+  	select *from DGWmember;
+  	
+  	</select>
+  	
+  	<select id="Detail" resultType="daily.game.dto.MemberDTO">
+  	select * from DGWmember
+  	where id=#{id};
+  	
+  	</select>
+  	
+  	<update id="Update">
+  	update DGWmember
+  	set name=#{name}, birth=#{birth}, email=#{email}, phone=#{phone}
+  	where id=#{id};
+  	
+  	</update>
+  	
+  	<delete id="Delete">
+  	Delete from DGWmember
+  	where id=#{id} and pw=#{pw};
+  	
+  	</delete>
+  	
+  	<select id="Login" resultType="daily.game.dto.MemberDTO">
+  	
+  	select * from DGWmember
+  	where id=#{id}
+  	
+  	
+  	</select>
+  	
+  	<select id="NDetail" resultType="daily.game.dto.MemberDTO">
+  	select * from DGWmember
+  	where name=#{name};
+  	
+  	</select>
+  	
+  	
+  	
+  	
+  </mapper>

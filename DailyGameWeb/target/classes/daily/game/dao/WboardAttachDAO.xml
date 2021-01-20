@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   <mapper namespace="daily.game.dao.WboardAttachDAO">
+   <insert id="winsert">
+   
+   insert into wfileattach
+   values(#{uuid},#{uploadPath},#{fileName},#{bno})
+   
+   </insert>
+   <select id="wimgSelect" resultType="daily.game.dto.BoardAttachDTO">
+   	select* from wfileattach
+   	where bno=#{bno};
+   	</select>
+   </mapper>

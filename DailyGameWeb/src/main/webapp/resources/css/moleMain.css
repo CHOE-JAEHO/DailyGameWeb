@@ -1,0 +1,139 @@
+@charset "UTF-8";
+body{
+	margin:0;
+	padding:20px;
+	display:flex;
+}
+#board{
+	margin:auto;
+	width:auto;
+	height:auto;
+	background-color:#3a3a3a;
+	display:flex;
+	flex-flow:row wrap;
+}
+#Gamebox{
+	padding-top:20px;
+		margin-left:0px;
+	width: 600px;
+	height: 800px;
+	background-color:#3a3a3a;
+	flex:left;
+	position:relativ;
+
+}
+
+#GameBoard{
+	margin: auto;
+	margin-top:10px;
+	width:450px;
+	height:720px;
+	display:flex;
+	flex-flow:row wrap;
+}
+.MoleHole{
+	flex:left;
+	width:150px;
+	height:180px;
+	background-color:green;
+	background-image:url("../images/EmptyHole.png");
+	background-size: 100% 100%;
+	position: relative;
+}
+.mole{
+	
+	width:150px;
+	height:180px;
+	position: absolute;
+}
+.moleImg{
+	width:150px;
+	height:180px;
+}
+
+.attecked{
+	width:150px;
+	height:180px;
+	position: absolute;
+}
+.atteckedImg{
+	width:150px;
+	height:180px;
+
+}
+#start{
+	margin:auto;
+}
+
+/*오른쪽 표시, 컨트롤러~*/
+#Mright{
+	height:auto;
+}
+.info{
+	
+	margin-right:0px;
+	background-color:#3a3a3a;
+	width:300px;
+	height:480px;
+	flex:left;
+	position:relativ;
+	
+}
+#Score{
+	height:480px;
+}
+table{
+	width:300px;
+	border-spacing: 0px;
+	
+}
+#Rank1{
+	background-color: #3a3a3a;
+	color:yellow;
+	font-family:Noto Sans CJK KR;
+	font-weight:bold;
+	font-size:28px;
+	text-align:right;
+	height:52px;
+}
+td{
+	padding-right:10px;
+}
+.rank{
+	background-color: #3a3a3a;
+	color:white;
+	font-family:Noto Sans CJK KR;
+	font-size:20px;
+	font-weight:bold;
+	text-align:right;
+	width:100px;
+	height:42px;
+}
+#MyScore{
+	background-color:#3a3a3a;
+	color:yellow;
+	font-family:Noto Sans CJK KR;
+	font-weight:bold;
+	font-size:28px;
+	text-align:right;
+	height:52px;
+}
+.ActionMole{
+	background-color:#3a3a3a;
+	width:100%;
+	height:340px;
+}
+.AMoleHole{
+	margin-left:40px;
+	width:180px;
+	height:270px;
+}
+#mole3{
+	width:200px;
+	height:270px;
+}
+
+
+	
+	
+	

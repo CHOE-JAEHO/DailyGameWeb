@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="daily.game.dao.WreplyDAO">
+  
+  <insert id="wreplyInsert"><!-- 리턴타입이 성공 건수에 관한 int밖에업다. -->
+  		insert into wDGWreply (bno,reply,name) values(#{bno},#{reply},#{name});
+  </insert>
+  
+  <select id="wreplySelect" resultType="daily.game.dto.ReplyDTO">
+  select * from wDGWreply
+where bno=#{bno};
+  </select>
+  
+  <delete id="wreplyDelete">
+  delete from wDGWreply
+  where rno=#{rno};
+  
+   </delete>
+   
+   <update id="wreplyUpdate">
+   update wDGWreply
+   set reply=#{reply}
+   where rno=#{rno}
+   
+   
+   </update>
+  
+  
+  
+  
+  </mapper>

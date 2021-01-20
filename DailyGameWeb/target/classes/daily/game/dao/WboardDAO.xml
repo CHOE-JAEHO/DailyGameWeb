@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="daily.game.dao.WboardDAO">
+
+	<insert id="wboardWrite">
+	
+	<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+	select max(bno)+1 bno from WDGWboard;
+	</selectKey>
+	insert into wDGWboard (ti,ct,name)
+	values (#{ti},#{ct},#{name})
+	
+	
+	</insert>
+	
+	<select id="wboardList" resultType="daily.game.dto.BoardDTO">
+	
+	select *from(
+			select @rownum:=@rownum+1 as rownum,
+            b.* from(select @rownum:=0)as tmp,
+            wDGWboard as b
+            
+            <if test='type=="t"'>
+			where ti like concat('%',#{keyword},'%')
+			</if>
+			<if test='type=="c"'>
+			where ct like concat('%',#{keyword},'%')
+			</if>
+			<if test='type=="n"'>
+			where name like concat('%',#{keyword},'%')
+			</if>
+            
+            order by bno desc
+            ) as pagingboard
+	 <![CDATA[  where rownum>(#{pageNum}-1)*#{amount}  and rownum<=#{pageNum}*#{amount};]]>
+	</select>
+
+	
+	<select id="wboardDetail" resultType="daily.game.dto.BoardDTO">
+		select * from wDGWboard
+		where bno=#{bno}
+	 </select>
+	 
+	 <update id="wboardUpdate">
+	 	update wDGWboard
+	 	set ti=#{ti},ct=#{ct}
+	 	where bno=#{bno}
+	 
+	 </update>
+	 
+	 <delete id="wboardDelete">
+	 delete from wDGWboard 
+	 where bno=#{bno}
+	 </delete>
+	 
+	    <select id="getwTotal" resultType="int">
+   select count(*) from wDGWboard
+			  <if test='type=="t"'>
+			where ti like concat('%',#{keyword},'%')
+			</if>
+			<if test='type=="c"'>
+			where ct like concat('%',#{keyword},'%')
+			</if>
+			<if test='type=="n"'>
+			where name like concat('%',#{keyword},'%')
+			</if>
+   
+   </select>
+	 
+
+
+</mapper>

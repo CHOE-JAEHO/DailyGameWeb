@@ -1,0 +1,95 @@
+@charset "UTF-8";
+body{
+}
+#back{ 
+	text-align:center;
+	padding-top:16px;
+	padding-left:32px;
+	padding-right:32px;
+	width:1980;
+	height:auto;
+	
+}
+#main{ 
+	/*Flex는 요소의 크기가 불분명하거나 동적인 경우에도, 각 요소를 정렬할 수 있는 효율적인 방법을 제공합니다.
+
+우선 Flex는 2개의 개념으로 나뉩니다.
+첫 번째는 Container 두 번째는 Items 입니다.
+위에서 살펴본 바와 같이 Container는 Items를 감싸는 부모 요소이며, 각 Item을 정렬하기 위해선 Container가 필수입니다.
+
+주의할 부분은 Container와 Items에 적용하는 속성이 구분되어 있다는 것입니다.
+Container에는 display, flex-flow, justify-content 등의 속성을 사용할 수 있으며,
+Items에는 order, flex, align-self 등의 속성을 사용할 수 있습니다.*/
+	overflow:hidden;
+	margin:auto;
+	width:80%;
+	height:auto;
+
+	display:flex;
+	justify-content:space-around;
+	flex-flow:row wrap;
+}
+.innerMain{
+	border-radius:10px;
+	padding:5px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:32px;
+	margin-bottom:32px;
+	width:25%;
+	height:420px;
+	background-color:#d4d4d4;
+	display:flex;
+	flex-flow:column;
+	justify-content:space-around;
+}
+.preview1{
+	width:90%;
+	height:240px;
+	margin:auto;
+	margin-top:8px;
+	margin-bottom:8px;
+	background-image:url('../images/EmptyHole.png');
+	background-size: 100% 100%;
+}
+.preview2{
+	width:90%;
+	height:240px;
+	margin:auto;
+	margin-top:8px;
+	margin-bottom:8px;
+	background-color:#d4d4d4;
+	background-image:url('../images/workHard.png');
+	background-size: 100% 100%;
+}
+#linkImg1{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+.explain{
+	border:gray;
+	width:90%;
+	height:auto;
+	margin:auto;
+	padding-top:4px;
+	padding-bottom:4px;
+	margin-top:8px;
+	margin-bottom:8px;
+	background-color:white;
+}
+h3{
+	font-family: 'Black Han Sans', sans-serif;
+	margin-top:4px;
+	margin-bottom:12px;
+}
+.Etext{
+	font-family: 'Do Hyeon', sans-serif;
+	font-size:16px;
+	margin-top:12px;
+	margin-bottom:4px;
+}
+
+
+

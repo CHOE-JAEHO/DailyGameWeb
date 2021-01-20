@@ -1,0 +1,38 @@
+@charset "UTF-8";
+#gameboard{
+	
+	padding: 40px 40px;
+	width: full;
+	height: 900px;
+	background-color: black;
+	display:flex;
+	flow:left;
+	
+}
+#window{
+	display:flex;
+	flex-flow:column;
+	width:1080px;
+	height:840px;
+	background-color:white;
+	
+}
+#console{
+	padding:none;
+	margin:none;
+	width:320px;
+	height:760px;
+	background-color:blue;
+}
+#status{
+	
+	width:320px;
+	height:90px;
+	background-color:gray;
+}
+#bag{
+	
+	width:320px;
+	height:480px;
+	background-color:steelblue;
+}

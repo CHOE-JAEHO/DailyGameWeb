@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="daily.game.dao.ScoreDAO">
+  
+  <select id="MSCheck" resultType="daily.game.dto.ScoreDTO">
+    
+	select * from DGWMscore
+	where id=#{id};
+  </select>
+  
+  <select id="BSCheck" resultType="daily.game.dto.ScoreDTO">
+    
+	select* from DGWMscore where mscore= (select Max(mscore) from DGwMscore);
+	
+  </select>
+  
+  <select id="RankList" resultType="daily.game.dto.ScoreDTO">
+  	select @Ranking:= @Ranking+1 as Ranking, MS.*
+from (select @Ranking:=1) as resetR,
+ DGWMscore as MS order by Mscore desc  limit 1,9;
+  </select>
+  
+  <insert id="Mnewrecord">
+  	insert into DGWMscore values
+	(#{mscore},#{name},#{id});  
+  </insert>
+  
+  <update id="UpdateRecord">
+  	update DGWMscore
+	set mscore=#{mscore}
+	where id=#{id};
+  
+  </update>
+  
+  
+  
+  </mapper>

@@ -1,0 +1,12 @@
+<!-- JQUERY -->
+<script type="text/javascript" src="/resources/js/jquery-3.5.1.min.js"></script>
+<!-- FONT-FAMILLY -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="/resources/css/bootstrap.css">
+<script type="text/javascript" src="/resources/js/bootstrap.js"></script>

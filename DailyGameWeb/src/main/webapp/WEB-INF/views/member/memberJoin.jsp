@@ -26,7 +26,7 @@
 		 	<tr>
 		 	<td class="dot">*</td><td>비밀번호</td><td><input type="password" id="pw" name="pw">
 		 	<br id="pwL">
-		 	<span class="pwOp" style="text-align:left">5~12자리의 영문,숫자만 가능합니다.</span>
+		 	<span class="pwOp" style="text-align:left">공백없이 6~14자리의 영문,숫자,특수문자 조합만 가능합니다.</span>
 		 	</td>
 		 	<td></td>
 		 	</tr>

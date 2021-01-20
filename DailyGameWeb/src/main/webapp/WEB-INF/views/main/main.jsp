@@ -6,7 +6,7 @@
 <div id="profil">
 	<div id="innerpro">
 		<div id="imgproM"><img src="/resources/images/develop.png"></div>
-		<div id="textpro"><p>반갑습니다.<br> 주인장 아겔입니다. 보소</p>${bno}</div>	
+		<div id="textpro"><p>반갑습니다.<br> 주인장 아겔입니다.</p>${bno}</div>	
 	</div>
 </div>
 <div id="loginfo">

@@ -18,7 +18,7 @@
 	
 	<table id="WBtable">
 		<tr>
-		<td class="WBTD1">제목</td><td><input id="BWti"  type="text" name="ti" placeholder="제목을 입력해주세요"></td>
+		<td class="WBTD1">제목</td><td><input id="BWti"  type="text" id="ti" name="ti" placeholder="제목을 입력해주세요"></td>
 		</tr>
 		<tr>
 		<td class="WBTD1">작성자</td><td><input type="text" name="name" value="${Lname }" readOnly></td>

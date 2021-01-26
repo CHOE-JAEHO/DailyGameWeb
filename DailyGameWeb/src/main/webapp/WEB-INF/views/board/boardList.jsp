@@ -67,12 +67,16 @@
 	
 	</div>
 	
-<c:if test="${Lname!=null }">
+	<c:if test="${Lname!=null }">
 		<div style="position:relative;left:84%; top:-10px;">		
 		<a href="boardWrite" style="text-align:right"><input id="BWfromL" type="button" value="글쓰기"> </a>
 		</div>
 	</c:if>	
-	
+		<c:if test="${Lname==null }">
+		<div style="position:relative;left:70%;top:-10px;">		
+		글쓰기는 로그인 후 가능합니다.
+		</div>
+	</c:if>	
 
 	
 	

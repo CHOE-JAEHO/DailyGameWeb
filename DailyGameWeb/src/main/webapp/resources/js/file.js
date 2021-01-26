@@ -25,8 +25,14 @@ $(document).ready(function(){
 			str+="<input type='text' name='attachList["+i+"].uuid' value='"+jobj.data("uuid")+"'>";
 			str+="<input type='text' name='attachList["+i+"].uploadPath' value='"+jobj.data("path")+"'>";
 		})
-		
+		var ti=$("#ti").val();
+		var blankPt = /\s/g;
+		var tiblFT=blankPt.test(ti)
+		if(tiblFT){
+		alert(tiblFT)
 		formObj.append(str).submit();//form 태그의 name에 있는 것을 싹 다 넘겨라 submit을 누르면.
+			
+		}
 		
 		})
 		

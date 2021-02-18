@@ -59,13 +59,13 @@ function setIFrameHeight(obj){
 	setTimeout(function(){
         obj.height = obj.contentDocument.body.offsetHeight + 40;
 		console.log(obj.height)
-		},500)
+		},400)
     } else {
 	/*scrollHeight : 스크롤바 높이를 뺀 내용 전체의 높이
 
-clientHeight : 스크롤바 높이를 뺀 가시적인 높이
+	clientHeight : 스크롤바 높이를 뺀 가시적인 높이
 
-offsetHeight : 스크롤바 높이를 포함한 가시적인 높이 */
+	offsetHeight : 스크롤바 높이를 포함한 가시적인 높이 */
         obj.height = obj.contentWindow.document.body.scrollHeight;
 
     }

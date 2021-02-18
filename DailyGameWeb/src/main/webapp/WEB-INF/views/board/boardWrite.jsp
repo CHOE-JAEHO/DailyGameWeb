@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/resources/css/Mwindow.css">
 <title>글쓰기</title>
 </head>
-<body>
+<body style="min-height:1000px;">
 	
 	<div id="WBmain">
 	<h1 id="WBtitle">자유게시판</h1>

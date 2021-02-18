@@ -82,11 +82,6 @@ span{
 	height:34px;
 }
 
-
-
-
-
-
 #Join{
 	margin-top:10px;
 	font-family: 'Nanum Myeongjo', serif;
@@ -137,12 +132,10 @@ td{
 	font-size:20px;
 	font-weight:bold;
 }
-
-
-
 /*BoardWrite-------------------------------------*/
 #WBmain{
-	
+	min-height:600px;
+	height:auto;	
 	margin:auto;
 
 }

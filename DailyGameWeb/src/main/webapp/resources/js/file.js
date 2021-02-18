@@ -58,7 +58,7 @@ $(document).ready(function(){
 				alert("업로드됨");
 				console.log(data);
 				showUploadResult(data);
-			},
+		},
 			error:function(){
 				window.location.href="localhost:8080/main/Board"
 			}

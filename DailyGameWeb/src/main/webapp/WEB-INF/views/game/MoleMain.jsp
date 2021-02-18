@@ -20,121 +20,9 @@
   <div id="Gamebox">
 	<div id="GameBoard">
 	
-		<div class="MoleHole">
-			<div class="mole" id="mole1" onclick="getPoint()" >
-			<img class="moleImg" id="moleImg1"src="/resources/images/mole.png">
-			</div>
-			
-			<div class="attecked"id="attecked1">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole2" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked2">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole3" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked3">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		<div class="MoleHole">
-			<div class="mole" id="mole4" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked4">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole5" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked5">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole6" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked6">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole7" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked7">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole8" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked8">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole9" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked9">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole10" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked10">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole11" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked11">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		<div class="MoleHole">
-			<div class="mole" id="mole12" onclick="getPoint()">
-			<img class="moleImg"src="/resources/images/mole.png">
-			</div>
-			<div class="attecked" id="attecked12">
-			<img class="atteckedImg" src="/resources/images/attecked.png">
-			</div>
-		</div>
-		
-		
-		
-		<div id="start"><button id="startbtn">start</button></div>
-	
 	</div>
 	
-	
+	<div id="start"><button id="startbtn">start</button></div>
 	</div>
 <div id=Mright>
 	<div class="info">
@@ -166,7 +54,7 @@
 	<div class="ActionMole">
 		<div class="AMoleHole">
 		
-			<img id="mole3" src="/resources/images/mole.png" >
+			<img id="mole13" src="/resources/images/mole.png" >
 		
 		</div>
 	</div>

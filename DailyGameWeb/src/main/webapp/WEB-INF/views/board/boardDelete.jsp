@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div>
+	<div style="height:400px;">
 	<form role="BDelete" action="/board/boardDelete" method="post">
 		<table style="margin:auto;margin-top:200px;background:#d4d4d4;padding:4px 4px;">
 		<input type="hidden"name="bno" value="${Detail.bno }">
@@ -24,7 +24,7 @@
 			<tr>
 			
 			<td colspan="2" style="text-align:center"><input type="submit" value="삭제">
-			 <a> <input type="button" value="취소"></a></td>
+			 <a href='/board/boardDetail?bno=${Detail.bno }'> <input type="button" value="취소"></a></td>
 			</tr>
 		</table>
 	

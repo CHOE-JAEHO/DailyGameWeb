@@ -62,6 +62,8 @@ body{
 
 }
 #start{
+	width:30px;
+	position:relative;
 	margin:auto;
 }
 
@@ -128,7 +130,7 @@ td{
 	width:180px;
 	height:270px;
 }
-#mole3{
+#mole13{
 	width:200px;
 	height:270px;
 }
